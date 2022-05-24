@@ -11,14 +11,6 @@ app.use(express.static('./public'));
 app.use(express.json());
 
 app.use(cors());
-//routes
-app.get('/hello', (req, res) => {
-	res.send('Task Manager');
-});
-
-app.get('/index.html', (req, res) => {
-	res.send();
-});
 
 app.use('/api/v1/tasks', tasks);
 
